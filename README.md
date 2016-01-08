@@ -42,4 +42,4 @@ The code also uses the basics of `do` notation, specially for IO. The points tha
 
 With the above in mind, have a look at the code.
 
-Then, with this a little bit of more Haskell, I hope you will be able to modify the above to make the server behave differently.
+So, I hope that with this and a little bit of more Haskell, you will be able to modify the above to make the server behave differently.
