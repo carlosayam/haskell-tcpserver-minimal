@@ -1,12 +1,14 @@
 module Main where
 
+import System.Environment (getArgs)
 import qualified Network.Simple.TCP as TCP
 import qualified Data.ByteString.Char8 as BSC
 
 main :: IO ()
 main = do
-  putStrLn "Serving on 127.0.0.1:9100"
-  TCP.serve (TCP.Host "127.0.0.1") "9100" $ \(socket, remoteAddr) -> do
+  [aHost, aPort] <- getArgs
+  putStrLn $ "Serving on " ++ aHost ++ ":" ++ aPort
+  TCP.serve (TCP.Host aHost) aPort $ \(socket, remoteAddr) -> do
     putStrLn $ "TCP Client: " ++ show remoteAddr
     printLoopBye socket
     -- or printLoop socket
