@@ -42,4 +42,6 @@ The code also uses the basics of `do` notation, specially for IO. The points tha
 
 With the above in mind, have a look at the code.
 
+How I came to this? I haven't even reached the chapter on monad IO of [Haskell Programming / from first principles](http://haskellbook.com) but something already clicked for me. I highly recommend this book, it is on early access now.
+
 So, I hope that with this and a little bit of more Haskell, you will be able to modify the above to make the server behave differently.
